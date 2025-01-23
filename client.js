@@ -16,10 +16,10 @@ const client = new calculadoraProto('localhost:50051', grpc.credentials.createIn
 
 client.Add({ num1: 5, num2: 3 }, (error, response) => {
   if (error) console.error('Error:', error);
-  else console.log('Addition Result:', response.result);
+  else console.log('Resultado da adição:', response.result);
 });
 
 client.Subtract({ num1: 10, num2: 4 }, (error, response) => {
   if (error) console.error('Error:', error);
-  else console.log('Subtraction Result:', response.result);
+  else console.log('Resultado da subtração:', response.result);
 });
